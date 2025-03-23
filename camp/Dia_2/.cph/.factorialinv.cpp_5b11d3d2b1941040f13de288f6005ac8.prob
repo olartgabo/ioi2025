@@ -1,0 +1,1 @@
+{"name":"Local: factorialinv","url":"c:\\Users\\User\\OneDrive\\Desktop\\competitiveProgramming\\Dia_2\\factorialinv.cpp","tests":[{"id":1742332496439,"input":"120\n6\n5040","output":"5\n3\n7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\User\\OneDrive\\Desktop\\competitiveProgramming\\Dia_2\\factorialinv.cpp","group":"local","local":true}

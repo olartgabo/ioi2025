@@ -1,0 +1,1 @@
+{"name":"Local: main","url":"c:\\Users\\User\\OneDrive\\Desktop\\competitiveProgramming\\main.cpp","tests":[{"id":1741710638429,"input":"5\n1006 7 5 9 11111\n","output":"5 11111 7 1006 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\User\\OneDrive\\Desktop\\competitiveProgramming\\main.cpp","group":"local","local":true}
