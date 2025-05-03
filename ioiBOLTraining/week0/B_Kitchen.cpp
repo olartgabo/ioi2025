@@ -5,12 +5,7 @@ using namespace std;
 #define No cout <<"Impossible"<<"\n";
 using ll = long long;
 int main(){
-    int n,m,k; // 1 1 2
-               // 3 3 3
-               // 1 2 2
-
-               // 1 4 3
-               //hay varios disponibles
+    int n,m,k;
     cin>>n>>m>>k;
     vector<int> comida(n);
     vector<int> chefs(m);
@@ -20,35 +15,29 @@ int main(){
         No
         return 0;
     } else{
+        //caso de que solo se necesita un chef, k = 1
         for(int i =0;i<n;i++){
             cin>>comida[i];
-            sumcomida+=comida[i];
-            if(comida[i]>k){
-                No
-                return 0;
-            }
         }
+        int resultado =0;
         for(int i =0;i<m;i++){
             cin>>chefs[i];
             sum+=chefs[i];
-            // 1 5 7 9 6 3 
-            // 1 3 5 6 7 9
-            // 1 3 5 6
         }
         sort(chefs.begin(),chefs.end());
-        int rest=m-k;
-        int top = chefs.size();
-        for(int i=0;i<rest;i++){
-            sum-=chefs[top-i];
+        int thechef = chefs[0];
+        for(int i=0;i<n;i++){
+            if(comida[i]%thechef!=0){
+                resultado = resultado + (comida[i]%thechef)*thechef+thechef;
+            } else{
+                resultado = resultado + comida[i];
+            }
         }
-        int res = sum-sumcomida;
-        cout<<res;
-        
-        
-
-
+        cout<<resultado;
 
     }
 
-    
+    return 0;
 }
+
+
