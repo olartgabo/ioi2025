@@ -28,7 +28,7 @@ int main(){
         int thechef = chefs[0];
         for(int i=0;i<n;i++){
             if(comida[i]%thechef!=0){
-                resultado = resultado + (comida[i]%thechef)*thechef+thechef;
+                resultado = resultado + (comida[i]/thechef)*thechef+thechef;
             } else{
                 resultado = resultado + comida[i];
             }
