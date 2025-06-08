@@ -5,12 +5,19 @@ using namespace std;
 #define No cout <<"No"<<"\n";
 using ll = long long;
 int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
     int t;
     cin>>t;
     while(t--){
-
+        ll a;cin>>a;
+        if(a==1)cout<<1;return 0;
+        ll sum =0;
+        for(ll i=1;i<=a;i++){
+            sum+=(solve(i));
+        }
+        cout<<sum
     }
+
+
+
     return 0;
 }

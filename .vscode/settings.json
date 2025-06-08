@@ -6,6 +6,7 @@
         "chrono": "cpp",
         "span": "cpp",
         "limits": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "iosfwd": "cpp"
     }
 }
